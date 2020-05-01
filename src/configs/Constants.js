@@ -16,7 +16,9 @@ const VALUE = {
         bg_button_start: '#555555',
         bg_button_end: 'rgba(51,51,51,0.65)',
         line_input_text: '#68989898',
-        color_forget: '#fcb368'
+        color_forget: '#fcb368',
+        color_test: '#fff',
+        color_test2: '#cccc'
     },
     string: {
         value_text: 'Ngân hàng thuốc Việt cho mọi nhà',
