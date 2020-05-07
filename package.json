@@ -12,22 +12,26 @@
   "dependencies": {
     "@hoyleg/rn-textinputlayout": "^2.0.2",
     "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/viewpager": "^4.0.0",
     "@react-navigation/drawer": "^5.5.1",
     "@react-navigation/material-bottom-tabs": "^5.1.10",
     "@react-navigation/native": "^5.1.7",
     "@react-navigation/stack": "^5.2.14",
+    "axios": "^0.19.2",
     "native-base": "^2.13.12",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-image-slider-box": "^1.0.12",
     "react-native-linear-gradient": "^2.5.6",
-    "react-native-paper": "^3.8.0",
+    "react-native-paper": "^3.9.0",
     "react-native-reanimated": "^1.8.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-safe-area-view": "^1.1.1",
     "react-native-screens": "^2.7.0",
-    "react-native-vector-icons": "^6.6.0"
+    "react-native-snap-carousel": "^3.9.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-fast-image": "^8.1.5"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
