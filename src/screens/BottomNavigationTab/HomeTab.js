@@ -81,6 +81,7 @@ function HomeTab({navigation}) {
                     <ActivityIndicator size={'large'} color={'#878787'}/>
                 </View> : (
                         <FlatList
+                            showsVerticalScrollIndicator={false}
                             data={notification.slice(5, notification.length).map((notify) => notify)}
                             keyExtractor={(item, index) => {
                                 return item._id;
@@ -113,6 +114,7 @@ function HomeTab({navigation}) {
                                         <FlatList
                                             data={itemNewPill}
                                             horizontal={true}
+                                            showsHorizontalScrollIndicator={false}
                                             keyExtractor={(item, index) => {
                                                 return item._id;
                                             }}
@@ -126,11 +128,12 @@ function HomeTab({navigation}) {
                                             )}
                                         />
                                     )}
-                                    <Title title={String.value_title_pill_new} details={String.value_more}/>
+                                    <Title title={String.value_title_pill_change} details={String.value_more}/>
                                     {isLoading ? <ActivityIndicator size={'large'} color={Colors.color_black}/> : (
                                         <FlatList
                                             data={itemsPill}
                                             horizontal={true}
+                                            showsHorizontalScrollIndicator={false}
                                             keyExtractor={(item, index) => {
                                                 return item._id;
                                             }}
@@ -144,11 +147,12 @@ function HomeTab({navigation}) {
                                             )}
                                         />
                                     )}
-                                    <Title title={String.value_title_pill_new} details={String.value_more}/>
+                                    <Title title={String.value_title_pill_end} details={String.value_more}/>
                                     {isLoading ? <ActivityIndicator size={'large'} color={Colors.color_black}/> : (
                                         <FlatList
                                             data={itemsPill}
                                             horizontal={true}
+                                            showsHorizontalScrollIndicator={false}
                                             keyExtractor={(item, index) => {
                                                 return item._id;
                                             }}
@@ -200,7 +204,7 @@ const styles = StyleSheet.create({
         marginRight: 6,
         marginLeft: 6,
         backgroundColor: 'rgba(0,0,0,0.72)',
-        color: '#ffffff',
+        color: Colors.color_white,
         fontSize: 16,
         fontWeight: '900',
         fontFamily: Fonts.semibold,
@@ -219,7 +223,7 @@ const styles = StyleSheet.create({
     },
     notify_item: {
         flexDirection: 'row',
-        alignItems: 'center',
+        alignItems: Position.center,
         borderRadius: 10,
         marginLeft: 5,
         paddingLeft: 5,
@@ -232,7 +236,7 @@ const styles = StyleSheet.create({
     notify_title: {
         flex: 1,
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: Position.center,
         padding: 10,
         paddingStart: 5,
     },
@@ -248,7 +252,7 @@ const styles = StyleSheet.create({
         color: Colors.color_text,
     },
     line_custom: {
-        width: '100%',
+        width: Size.match_parent,
         height: 1,
         backgroundColor: 'rgba(51,51,51,0.28)'
     }
